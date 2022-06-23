@@ -4,3 +4,4 @@ node {
     stage ("checkout")  {
         git 'https://github.com/Makas2020/wonderful.git' 
     }
+  }
