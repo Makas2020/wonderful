@@ -7,5 +7,8 @@ node {
     stage ('build')  {
     sh "${mvnHome}/bin/mvn clean install -f MyWebApp/pom.xml"
     }
-    
+     stage ('Code coverage')  {
+       jacoco()
+   }
+
   }
