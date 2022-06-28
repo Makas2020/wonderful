@@ -12,7 +12,7 @@ node {
    }
     
     stage ('Code quality scan') {
-     withSonarQubeEnv('Sonar-6') {
+     withSonarQubeEnv('Sonar123') {
      sh "${mvnHome}/bin/mvn sonar:sonar -f MyWebApp/pom.xml"
       }
    
