@@ -11,6 +11,13 @@ node {
        jacoco()
    }
     
+    stage ('Code quality scan') {
+     withSonarQubeEnv('Sonar-6') {
+     sh "${mvnHome}/bin/mvn sonar:sonar -f MyWebApp/pom.xml"
+      }
+   
+    }
+         
 
 
   }
