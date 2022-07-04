@@ -18,10 +18,6 @@ node {
    
     }
          
-     stage ('DEV Deploy')
-    {
-        echo "deploying to DEV tomcat "
-         sh 'sudo cp /var/lib/jenkins/workspace/$JOB_NAME/MyWebApp/target/MyWebApp.war /var/lib/tomcat8/webapps'
-    }
+    
 
   }
