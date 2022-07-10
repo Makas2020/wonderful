@@ -1,6 +1,6 @@
 node {
 
-    def mvnHome = tool 'Maven3'
+    def mvnHome = tool 'Maven2'
     stage ("checkout")  {
         git 'https://github.com/Makas2020/wonderful.git' 
     }
